@@ -1,0 +1,12 @@
+.title {
+    font-family: "HelveticaNeueCyr-Bold", sans-serif;
+    font-size: calc(26px + (35 - 26) * ((100vw - 320px) / (1600 - 320)));
+    text-transform: uppercase;
+    color: #2a2a2a;
+}
+
+@media (min-width: 1600px) {
+    .title {
+        font-size: 35px;
+    }
+}

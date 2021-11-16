@@ -14,6 +14,11 @@ img {
     object-fit: cover;
 }
 
+ul,
+ol {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -22,15 +27,38 @@ a {
 .container {
     width: 100%;
     max-width: 1200px;
-    padding: 15px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
-.btn {
-    padding: 22px 30px;
-    font-size: 18px;
-    font-family: "HelveticaNeueCyr-Bold", sans-serif;
+/* Ограничивающая оболочка */
+.slick-list {
+}
+/* Лента слайдов */
+.slick-track {
+}
+
+/* Точки (булиты) */
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-dots li {
+    margin: 0 4.5px;
+    width: 100%;
+    max-width: 25px;
+    display: flex;
+    height: 3px;
+    font-size: 0;
+    background-color: #505050;
+    position: relative;
+}
+/* Активная точка */
+.slick-dots li.slick-active {
     background-color: #a709fc;
-    display: inline-flex;
-    cursor: pointer;
+}
+/* Элемент точки */
+.slick-dots li button {
+    display: none;
 }
