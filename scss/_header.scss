@@ -25,7 +25,8 @@
         max-width: 80px;
         margin-bottom: 100px;
         img {
-            object-fit: contain;
+            -o-object-fit: contain;
+               object-fit: contain;
         }
     }
 
@@ -51,7 +52,7 @@
     &__info-title {
         font-size: calc(54px + (114 - 54) * ((100vw - 320px) / (1600 - 320)));
         margin: 35px 0;
-        font-family: "Impact";
+        font-family: "Impact", sans-serif;
         text-transform: uppercase;
     }
 

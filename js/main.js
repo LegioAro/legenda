@@ -15,32 +15,32 @@ $(document).ready(function () {
         $('.client__items').not('.slick-initialized').slick({
             slidesToShow: 5,
             slidesToScroll: 5,
-            arrows: false,
+            // arrows: false,
             dots: true,
             responsive: [
                 {
-                    breakpoint: 1200,
+                    breakpoint: 1350,
                     settings: {
                         slidesToShow: 4,
                         slidesToScroll: 4,
                     }
                 },
                 {
-                    breakpoint: 960,
+                    breakpoint: 1050,
                     settings: {
                         slidesToShow: 3,
                         slidesToScroll: 3,
                     }
                 },
                 {
-                    breakpoint: 730,
+                    breakpoint: 850,
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 2,
                     }
                 },
                 {
-                    breakpoint: 500,
+                    breakpoint: 650,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
@@ -63,6 +63,7 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         sliderPayment();
+        appendFooterSocial();
     })
 
     //scroll btn
@@ -91,4 +92,23 @@ $(document).ready(function () {
         }
 
     })
+
+    /////
+
+    function appendFooterSocial() {
+        if ($(window).width() <= 850) {
+            $('.footer__social-links').appendTo($('.footer__social-mob'));
+        } else {
+            $('.footer__social-links').appendTo($('.footer__social'));
+
+        }
+    }
+    appendFooterSocial();
+
+    ///
+    $('.form-popup__close').click(function () {
+        $('.carousel__button.is-close').click();
+    })
+
+
 });

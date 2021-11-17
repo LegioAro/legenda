@@ -1,0 +1,124 @@
+.footer {
+    background-color: #222222;
+    color: #fff;
+
+    &__wrapper {
+        padding: 45px 0 65px;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 45px;
+    }
+
+    &__social-name {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: "HelveticaNeueCyr-Roman", sans-serif;
+    }
+
+    &__social-links {
+    }
+
+    &__social-mob {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__social-link {
+        margin-right: 10px;
+        span {
+            font-size: 35px;
+            &:hover {
+                &::before {
+                    color: #fff;
+                }
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__contact-block {
+        margin-right: 60px;
+        display: flex;
+        align-items: center;
+        .footer__contact-item:nth-child(1) {
+            margin-right: 60px;
+        }
+    }
+
+    &__contact-item {
+        font-size: 16px;
+        font-family: "HelveticaNeueCyr-Roman", sans-serif;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__links {
+        padding: 15px 10px;
+        background-color: #252525;
+        color: #888888;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    &__link {
+        display: inline-flex;
+        padding: 8px 18px;
+        border-right: 1px solid #888888;
+        font-family: "HelveticaNeueCyr-Roman", sans-serif;
+        transition: 0.3s;
+        font-size: 14px;
+        &:hover {
+            color: #fff;
+        }
+        &:last-child {
+            border-right: 0;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .footer {
+        &__social {
+            justify-content: center;
+        }
+        &__links {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__link {
+            border-right: 0;
+            border-bottom: 1px solid #888888;
+        }
+        &__contact {
+            align-items: center;
+            flex-direction: column;
+        }
+        &__contact-block {
+            margin-right: 0;
+            margin-bottom: 30px;
+            .footer__contact-item:nth-child(1) {
+                margin-right: 40px;
+            }
+        }
+        &__contact-item {
+            text-align: center;
+        }
+        &__social-mob {
+            margin-top: 30px;
+        }
+    }
+}

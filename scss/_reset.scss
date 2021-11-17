@@ -37,6 +37,13 @@ a {
     }
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 /* Ограничивающая оболочка */
 .slick-list {
 }
@@ -100,6 +107,7 @@ a {
     border: 0;
     outline: none;
     transform-origin: center;
+    cursor: pointer;
 }
 /* Стрелка влево */
 .slick-arrow.slick-prev {
@@ -112,6 +120,10 @@ a {
 }
 /* Стрелка не активная */
 .slick-arrow.slick-disabled {
+}
+
+.carousel__button.is-close{
+    transform: scale(0.001);
 }
 
 @media (max-width: 750px) {

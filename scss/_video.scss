@@ -32,7 +32,8 @@
         height: 35px;
         transform: translateX(5px);
         img {
-            object-fit: contain;
+            -o-object-fit: contain;
+               object-fit: contain;
         }
     }
 

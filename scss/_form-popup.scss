@@ -1,0 +1,77 @@
+.form-popup {
+    padding: 100px 50px 80px;
+    background-color: #323232;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    max-width: 590px;
+    display: none;
+    position: relative;
+    box-shadow: 0 0 10px 0px #a709fc;
+
+    &__title {
+        font-family: "HelveticaNeueCyr-Bold", sans-serif;
+        font-size: 35px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        font-family: "HelveticaNeueCyr-Roman", sans-serif;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    &__close {
+        position: absolute;
+        width: 100%;
+        max-width: 35px;
+        height: 35px;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .form {
+        &__input-wrapper {
+        }
+
+        &__input-block {
+            input {
+                border-bottom: 1px solid #515151;
+            }
+        }
+
+        &__input-placeholder {
+        }
+
+        &__input-checked-block {
+            width: 100%;
+            max-width: 390px;
+            text-align: left;
+            margin: 0 auto;
+        }
+
+        &__input-checked-text {
+            color: #888888;
+            font-size: 14px;
+            font-family: "HelveticaNeueCyr-Roman", sans-serif;
+        }
+    }
+    .btn {
+        width: 100%;
+        max-width: 100%;
+        border: 0;
+        outline: none;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .form-popup {
+        padding: 100px 15px 80px;
+        &__title {
+            font-size: 30px;
+        }
+    }
+}
