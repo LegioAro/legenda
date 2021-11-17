@@ -1,15 +1,15 @@
 $(document).ready(function () {
-    // function sliderWho() {
-    //     if ($(window).width() < 550) {
-    //         $('.who__items').not('.slick-initialized').slick({
-    //             slidesToShow: 1,
-    //             arrows: false,
-    //             dots: true,
-    //         })
-    //     } else {
-    //         $('.who__items').filter('.slick-initialized').slick('unslick');
-    //     }
-    // }
+    function sliderPayment() {
+        if ($(window).width() <= 768) {
+            $('.payment__items').not('.slick-initialized').slick({
+                slidesToShow: 1,
+                arrows: false,
+                dots: true,
+            })
+        } else {
+            $('.payment__items').filter('.slick-initialized').slick('unslick');
+        }
+    }
 
     function sliderClient() {
         $('.client__items').not('.slick-initialized').slick({
@@ -51,10 +51,10 @@ $(document).ready(function () {
 
     }
 
-    // sliderWho();
+    sliderPayment();
     sliderClient();
 
     $(window).resize(function () {
-        // sliderWho();
+        sliderPayment();
     })
 });
