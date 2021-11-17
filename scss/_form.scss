@@ -1,0 +1,118 @@
+.form {
+    background-color: #000;
+    color: #fff;
+
+    &__wrapper {
+        padding: 70px 0;
+    }
+
+    &__text {
+        margin: 30px 0 60px;
+        text-align: center;
+        font-size: 16px;
+        font-family: "HelveticaNeueCyr-Roman", sans-serif;
+    }
+
+    &__input-wrapper {
+        max-width: 390px;
+        width: 100%;
+        margin: 0 auto 60px;
+    }
+
+    &__input-block {
+        position: relative;
+        width: 100%;
+        margin-bottom: 35px;
+        &:last-of-type {
+            margin-bottom: 50px;
+        }
+        input {
+            width: 100%;
+            padding: 12px 0;
+            font-size: 16px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0);
+            border: 0;
+            border-bottom: 1px solid #373737;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+    &__input-placeholder {
+        position: absolute;
+        font-family: "HelveticaNeueCyr-Roman", sans-serif;
+        font-size: 17px;
+        color: #a7a7a7;
+        left: 50%;
+        bottom: 12px;
+        transform: translateX(-50%);
+        pointer-events: none;
+        &.hidden {
+            display: none;
+        }
+    }
+
+    &__input-checked-block {
+        display: flex;
+        justify-content: center;
+        input {
+            display: none;
+        }
+        label {
+            display: flex;
+            width: 100%;
+            max-width: 20px;
+            height: 20px;
+            border: 2px solid #a709fc;
+            margin-right: 10px;
+            cursor: pointer;
+            position: relative;
+            transform: translateY(-5px);
+            &::before {
+                content: "✔";
+                position: absolute;
+                color: #a709fc;
+                font-size: 15px;
+                width: 15px;
+                height: 15px;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-40%) translateY(-75%);
+                display: none;
+            }
+        }
+        & input:checked + label::before {
+            display: flex;
+        }
+    }
+
+    &__input-checked-text {
+        font-size: 16px;
+        font-family: "HelveticaNeueCyr-Roman", sans-serif;
+    }
+
+    .title {
+        color: #fff;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 100%;
+        border: 0;
+        outline: none;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .form {
+        .title {
+            br {
+                display: none;
+            }
+        }
+    }
+}

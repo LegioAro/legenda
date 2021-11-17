@@ -84,6 +84,36 @@ a {
     display: none;
 }
 
+/* Стрелка */
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 78px;
+    background-image: url(../img/right-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    outline: none;
+    transform-origin: center;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+    left: -80px;
+    transform: translateY(-55%) rotate(180deg);
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+    right: -80px;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+
 @media (max-width: 750px) {
     .fancybox__slide {
         padding: 64px 15px;

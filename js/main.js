@@ -48,17 +48,26 @@ $(document).ready(function () {
                 },
             ]
         })
-
     }
+
+    function sliderReview() {
+        $('.review__items').not('.slick-initialized').slick({
+            slidesToShow: 1,
+        })
+    }
+
 
     sliderPayment();
     sliderClient();
+    sliderReview();
 
     $(window).resize(function () {
         sliderPayment();
     })
 
-    $(".btn").on("click",  function (event) {
+    //scroll btn
+
+    $(".btn").on("click", function (event) {
 
 
         //забираем идентификатор бока с атрибута href
@@ -70,4 +79,16 @@ $(document).ready(function () {
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({ scrollTop: top }, 1500);
     });
+
+
+    ///form input
+    $('.form__input-block input').on('focus', function () {
+        $(this).siblings('.form__input-placeholder').addClass('hidden');
+    })
+    $('.form__input-block input').on('blur', function () {
+        if ($(this).val().length == 0) {
+            $(this).siblings('.form__input-placeholder').removeClass('hidden');
+        }
+
+    })
 });
