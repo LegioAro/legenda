@@ -83,3 +83,9 @@ a {
 .slick-dots li button {
     display: none;
 }
+
+@media (max-width: 750px) {
+    .fancybox__slide {
+        padding: 64px 15px;
+    }
+}

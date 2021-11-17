@@ -57,4 +57,17 @@ $(document).ready(function () {
     $(window).resize(function () {
         sliderPayment();
     })
+
+    $(".btn").on("click",  function (event) {
+
+
+        //забираем идентификатор бока с атрибута href
+        var id = $(this).attr('data-scroll'),
+
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({ scrollTop: top }, 1500);
+    });
 });

@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/style.min.css">
 
     <title>Я Легенда</title>
@@ -24,7 +25,7 @@
                     <div class="header__info-logo">
                         <img src="img/logo.png" alt="">
                     </div>
-                    <div class="header__info-date">Старт 6 ДЕКАБРЯ</div>
+                    <div class="header__info-date">Старт <span> 6</span> декабря</div>
                     <div class="header__info-subtitle">Программа <span> Артема Нестеренко</span><br> по монетизации
                         экспертности</div>
 
@@ -32,7 +33,7 @@
                     <div class="header__info-text">
                         Освойте американскую технологию, которая превращает <br>
                         знания и опыт в миллионы</div>
-                    <div class="btn">Участвовать в программе</div>
+                    <div class="btn" data-scroll='#format'>Участвовать в программе</div>
                 </div>
 
 
@@ -49,7 +50,7 @@
     <section class="video">
         <div class="video__wrapper">
             <div class="video__item">
-                <div class="video__item-play">
+                <div class="video__item-play" data-fancybox data-src="https://www.youtube.com/watch?v=7J2uP7RRnfQ">
                     <div class="video__item-play-img">
                         <img src="img/video_play.png" alt="">
                     </div>
@@ -201,7 +202,7 @@
                                 ее грамотно упаковать, вы можете стартовать по моему пошаговому плану, с которым точно
                                 получится</p>
                         </div>
-                        <div class="btn">Иду в программу</div>
+                        <div class="btn" data-scroll='#format'>Иду в программу</div>
                     </div>
                     <div class="about__img">
                         <img src="img/about_img.png" alt="">
@@ -226,7 +227,7 @@
                         <img src="img/step_img.png" alt="">
                     </div>
                     <div class="step__info-btn">
-                        <div class="btn">Иду в программу</div>
+                        <div class="btn" data-scroll='#format'>Иду в программу</div>
                     </div>
 
                 </div>
@@ -308,7 +309,7 @@
     <section class="video">
         <div class="video__wrapper">
             <div class="video__item">
-                <div class="video__item-play">
+                <div class="video__item-play" data-fancybox data-src="https://www.youtube.com/watch?v=7J2uP7RRnfQ">
                     <div class="video__item-play-img">
                         <img src="img/video_play.png" alt="">
                     </div>
@@ -373,7 +374,7 @@
                     </div>
                 </div>
                 <div class="peculiarities__btn">
-                    <div class="btn">Иду в программу</div>
+                    <div class="btn" data-scroll='#format'>Иду в программу</div>
                 </div>
             </div>
         </div>
@@ -466,13 +467,13 @@
                     Вам ответит человек, который знает все о программе, вариантах участия, способах оплаты
                 </div>
                 <div class="chat__btn">
-                    <div class="btn">Задать Вопрос</div>
+                    <div class="btn" data-scroll='#format'>Задать Вопрос</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="format">
+    <section class="format" id="format">
         <div class="container__min">
             <div class="format__wrapper">
                 <div class="title">Выберите подходящий формат участия</div>
@@ -621,7 +622,7 @@
     </section>
 
     <section class="payment">
-        <div class="container">
+        <div class="container__min">
             <div class="payment__wrapper">
                 <div class="title">Как оплатить частями</div>
                 <div class="payment__items">
@@ -654,7 +655,7 @@
                             <p>Следуйте подсказкам на сайте</p>
                         </div>
                     </div>
-                    <div class="payment__item">
+                    <!-- <div class="payment__item">
                         <div class="payment__item-img">
                             <img src="img/payment/3.png" alt="">
                         </div>
@@ -667,10 +668,10 @@
                                 оставьте Ваши данные в форме, затем ожидайте звонка Вашего персонального менеджера
                             </p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="payment__btn">
-                    <div class="btn">Забронировать участие</div>
+                    <div class="btn" data-scroll='#format'>Забронировать участие</div>
                 </div>
             </div>
         </div>
@@ -782,7 +783,7 @@
                     программы, <br>
                     которые выполнили все задания и активно участвовали во всех разборах</div>
                 <div class="result__btn">
-                    <div class="btn">Иду в программу</div>
+                    <div class="btn" data-scroll='#format'>Иду в программу</div>
                 </div>
             </div>
         </div>
@@ -825,7 +826,7 @@
                     </div>
                 </div>
                 <div class="benefit__btn">
-                    <div class="btn">Иду в программу</div>
+                    <div class="btn" data-scroll='#format'>Иду в программу</div>
                 </div>
             </div>
         </div>
@@ -918,6 +919,7 @@
 
     <script src="js/jquery.3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/fancybox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

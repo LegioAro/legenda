@@ -23,7 +23,7 @@
         height: 80px;
         width: 100%;
         max-width: 80px;
-        margin-bottom: 120px;
+        margin-bottom: 100px;
         img {
             object-fit: contain;
         }
@@ -34,15 +34,18 @@
         font-family: "HelveticaNeueCyr-Roman", sans-serif;
         color: #cecece;
         span {
-            color: #fff;
+            font-family: "HelveticaNeueCyr-Bold", sans-serif;
         }
     }
 
     &__info-date {
-        font-family: "HelveticaNeueCyr-Bold", sans-serif;
-        font-size: 24px;
-        text-transform: uppercase;
-        margin-bottom: 20px;
+        font-family: "HelveticaNeueCyr-Roman", sans-serif;
+        color: #cecece;
+        font-size: 18px;
+        margin-bottom: 45px;
+        span {
+            font-family: "HelveticaNeueCyr-Bold", sans-serif;
+        }
     }
 
     &__info-title {
