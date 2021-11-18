@@ -34,7 +34,7 @@
             background-color: rgba(0, 0, 0, 0);
             border: 0;
             border-bottom: 1px solid #373737;
-            outline: none;
+            outline: none !important;
             cursor: pointer;
         }
     }
@@ -48,8 +48,11 @@
         bottom: 12px;
         transform: translateX(-50%);
         pointer-events: none;
+        transition: 0.3s;
         &.hidden {
-            display: none;
+            font-size: 14px;
+            color: #fff;
+            bottom: 34px;
         }
     }
 

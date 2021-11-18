@@ -2084,7 +2084,7 @@ input::-webkit-inner-spin-button {
   background-color: rgba(0, 0, 0, 0);
   border: 0;
   border-bottom: 1px solid #373737;
-  outline: none;
+  outline: none !important;
   cursor: pointer;
 }
 
@@ -2098,10 +2098,14 @@ input::-webkit-inner-spin-button {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   pointer-events: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .form__input-placeholder.hidden {
-  display: none;
+  font-size: 14px;
+  color: #fff;
+  bottom: 34px;
 }
 
 .form__input-checked-block {
