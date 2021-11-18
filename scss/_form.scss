@@ -90,6 +90,9 @@
     &__input-checked-text {
         font-size: 16px;
         font-family: "HelveticaNeueCyr-Roman", sans-serif;
+        a {
+            text-decoration: underline;
+        }
     }
 
     .title {
