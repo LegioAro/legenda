@@ -2298,6 +2298,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   -webkit-box-shadow: 0 0 10px 0px #a709fc;
           box-shadow: 0 0 10px 0px #a709fc;
+  min-height: 696px;
 }
 
 .form-popup__title {
